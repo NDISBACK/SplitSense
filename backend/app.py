@@ -1,14 +1,16 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/*": {"origins": "*"}})
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 @app.route("/explain", methods=["POST"])
 def explain():
+    print("✅ /explain route HIT")
     data = request.get_json()
-    return jsonify({"result": "Backend reached successfully!"})
+    return jsonify({"result": "Backend is connected successfully!"})
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    app.run(debug=True)
