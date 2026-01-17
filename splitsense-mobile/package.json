@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+  "dependencies": {
+    "motion": "^12.24.7"
+=======
   "name": "splitsense-mobile",
   "version": "1.0.0",
   "description": "",
@@ -16,5 +20,6 @@
     "@capacitor/core": "^8.0.1",
     "@capacitor/ios": "^8.0.1",
     "@capacitor/splash-screen": "^8.0.0"
+>>>>>>> b27490b (Added the android and ios app push and readme)
   }
 }

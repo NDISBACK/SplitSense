@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SplitSense</string>
+    <string name="title_activity_main">SplitSense</string>
+    <string name="package_name">com.yourname.splitsense</string>
+    <string name="custom_url_scheme">com.yourname.splitsense</string>
+</resources>
